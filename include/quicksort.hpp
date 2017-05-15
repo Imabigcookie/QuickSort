@@ -1,7 +1,7 @@
 #include <iostream>
 
 template <typename Iterator>
-void quick_Sort(Iterator first, Iterator last)
+void q_Sort(Iterator first, Iterator last)
 {
 	Iterator f = first, l = last;
 	int x = *(first+(last-first)/2);
@@ -17,6 +17,6 @@ void quick_Sort(Iterator first, Iterator last)
 		}
 	}
 	if (f < last)
-		quick_Sort( f, last);
+		q_Sort( f, last);
 	if (first< l)
-		quick_Sort( first, l);
+		q_Sort( first, l);
