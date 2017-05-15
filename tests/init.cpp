@@ -2,7 +2,7 @@
 #include <catch.hpp>
 
 
-SCENARIO("array")
+SCENARIO("mas")
 {
 	int m[] = { 6,3,8,2,1 };
 	int* f = m;
