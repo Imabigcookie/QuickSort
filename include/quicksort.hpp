@@ -1,6 +1,6 @@
 #include <iostream>
 
-template <typename Iterator>
+template <typename Iterator>
 void q_Sort(Iterator first, Iterator last)
 {
 	Iterator f = first, l = last;
@@ -20,3 +20,4 @@ void q_Sort(Iterator first, Iterator last)
 		q_Sort( f, last);
 	if (first< l)
 		q_Sort( first, l);
+}
