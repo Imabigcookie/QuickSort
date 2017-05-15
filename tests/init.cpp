@@ -5,9 +5,9 @@
 SCENARIO("array")
 {
 	int m[] = { 6,3,8,2,1 };
-	int* s=m;
-	int* d=m+4;
-	quick_Sort(s, d);
+	int* f = m;
+	int* l=m+4;
+	quick_Sort(f, l);
 	REQUIRE(m[0] == 1);
 	REQUIRE(m[1] == 2);
 	REQUIRE(m[2] == 3);
