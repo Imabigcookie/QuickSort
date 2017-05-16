@@ -4,15 +4,16 @@
 
 SCENARIO("mas")
 {
-	int m[] = { 6,3,8,2,1 };
+	int m[] = { 4,3,6,1,7,2 };
 	int* f = m;
-	int* l=m+4;
+	int* l=m+5;
 	q_Sort(f, l);
 	REQUIRE(m[0] == 1);
 	REQUIRE(m[1] == 2);
 	REQUIRE(m[2] == 3);
-	REQUIRE(m[3] == 6);
-	REQUIRE(m[4] == 8);
+	REQUIRE(m[3] == 4);
+	REQUIRE(m[4] == 6);
+	REQUIRE(m[4] == 7);
 }
 SCENARIO("matrix")
 {
