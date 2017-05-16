@@ -30,6 +30,4 @@ SCENARIO("matrix")
 	REQUIRE(mas[2][0] == 77);
 	REQUIRE(mas[2][1] == 78);
 	REQUIRE(mas[2][2] == 87);
-
-	
 }
