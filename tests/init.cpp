@@ -13,7 +13,7 @@ SCENARIO("mas")
 	REQUIRE(m[2] == 3);
 	REQUIRE(m[3] == 4);
 	REQUIRE(m[4] == 6);
-	REQUIRE(m[4] == 7);
+	REQUIRE(m[5] == 7);
 }
 SCENARIO("matrix")
 {
