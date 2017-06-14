@@ -11,7 +11,7 @@ void q_Sort(Iterator first, Iterator last)
 		while (*l > x) l--;
 		if (f <= l)
 		{
-			std::iter_swap(l, f);
+			swap(l, f);
 			f++;
 			l--;
 		}
