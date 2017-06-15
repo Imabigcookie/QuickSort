@@ -12,7 +12,7 @@ void q_Sort(Iterator right, Iterator left)
 		while (*j > *center) j--;
 		if (i <= j)
 		{
-			swap(*i, *j);
+			std::iter_swap(*i, *j);
 			i++;
 			j--;
 		}
