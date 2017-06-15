@@ -1,23 +1,22 @@
 #include <iostream>
 
 template <typename Iterator>
-void q_Sort(Iterator first, Iterator last)
+void q_Sort(Iterator right, Iterator left)
 {
-	Iterator f = first, l = last;
-	int x = *(first+(last-first)/2);
-	while (f <= l)
+	Iterator i = left;
+	Iterator j = right;
+	Iterator center = left;
+	while (i <= j)
 	{
-		while (*f < x) f++;
-		while (*l > x) l--;
-		if (f <= l)
+		while (*i < *center) i++;
+		while (*j > *center) j--;
+		if (i <= j)
 		{
-			std::iter_swap(l, f);
-			f++;
-			l--;
+			swap(*i, *j);
+			i++;
+			j--;
 		}
-	}
-	if (f < last)
-		q_Sort( f, last);
-	if (first< l)
-		q_Sort( first, l);
+	} 
+	if (left < j) q_Sort(j, left);
+	if (right > i) q_Sort(right, i);
 }
