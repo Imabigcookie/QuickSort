@@ -8,11 +8,11 @@ void q_Sort(Iterator right, Iterator left)
 	Iterator center = left;
 	while (i <= j)
 	{
-		while (*i < *center) i++;
-		while (*j > *center) j--;
+		while (*i < center) i++;
+		while (*j > center) j--;
 		if (i <= j)
 		{
-			std::iter_swap(*i, *j);
+			std::iter_swap(i, j);
 			i++;
 			j--;
 		}
