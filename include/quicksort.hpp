@@ -3,7 +3,7 @@
 template <typename Iterator>
 void q_Sort(Iterator first, Iterator last)
 {
-	Iterator f = first, l = last;
+	Iterator f = first, l = last-1;
 	int x = *(first+(last-first)/2);
 	while (f <= l)
 	{
@@ -17,5 +17,5 @@ void q_Sort(Iterator first, Iterator last)
 		}
 	}
 	if (f < last)  q_Sort( f, last);
-	if (first< l)  q_Sort( first, l);
+	if (first< l)  q_Sort( first, l+1);
 }
